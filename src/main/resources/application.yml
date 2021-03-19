@@ -1,0 +1,14 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /nautilus/api
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://auth0-poc-psql-srv.postgres.database.azure.com:5432/Nautilus
+    username: squaduser@auth0-poc-psql-srv
+    password: Squadpass1
+    initialization-mode: always
