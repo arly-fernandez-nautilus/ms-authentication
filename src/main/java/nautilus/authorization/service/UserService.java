@@ -4,7 +4,5 @@ import nautilus.authorization.dto.TokenDto;
 import nautilus.authorization.dto.UserDto;
 
 public interface UserService {
-
-	TokenDto findByPhone(UserDto userDto);
-	
+	TokenDto findByPhone(String phone, String pwd);
 }
