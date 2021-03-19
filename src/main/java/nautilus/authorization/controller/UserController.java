@@ -1,6 +1,7 @@
 package nautilus.authorization.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,6 +18,7 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	
+	@CrossOrigin
 	@PostMapping
 	public User getUser(@RequestBody UserDto userDto) {
 		return userService.findByPhone(userDto.getPhone());
