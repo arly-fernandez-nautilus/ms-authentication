@@ -21,7 +21,7 @@ public class UserController {
 	@CrossOrigin
 	@PostMapping
 	public TokenDto getUser(@RequestBody UserDto userDto) {
-		return userService.findByPhone(userDto.getPhoneNumber());
+		return userService.findByPhone(userDto);
 	}
 	
 }
