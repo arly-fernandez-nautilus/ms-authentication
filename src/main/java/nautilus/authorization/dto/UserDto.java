@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class UserDto {
 
-	private String phone;
-	private String password;
+	private String phoneNumber;
+	private String secretCode;
 	
 }

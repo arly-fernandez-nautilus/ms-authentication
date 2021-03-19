@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import nautilus.authorization.dto.TokenDto;
 import nautilus.authorization.dto.UserDto;
-import nautilus.authorization.model.User;
 import nautilus.authorization.service.UserService;
 
 @RestController
@@ -20,8 +20,8 @@ public class UserController {
 	
 	@CrossOrigin
 	@PostMapping
-	public User getUser(@RequestBody UserDto userDto) {
-		return userService.findByPhone(userDto.getPhone());
+	public TokenDto getUser(@RequestBody UserDto userDto) {
+		return userService.findByPhone(userDto.getPhoneNumber());
 	}
 	
 }

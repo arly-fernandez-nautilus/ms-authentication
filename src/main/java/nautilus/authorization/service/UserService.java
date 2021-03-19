@@ -1,9 +1,9 @@
 package nautilus.authorization.service;
 
-import nautilus.authorization.model.User;
+import nautilus.authorization.dto.TokenDto;
 
 public interface UserService {
 
-	User findByPhone(String phone);
+	TokenDto findByPhone(String phone);
 	
 }
