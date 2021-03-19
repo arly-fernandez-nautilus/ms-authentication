@@ -1,0 +1,15 @@
+server:
+   port: 3000
+auth0:
+   audience: https:/Auth02Java.nautilus.team
+   domain: dev-hju79n6o.us.auth0.com
+com:
+   auth0:
+      domain: dev-hju79n6o.us.auth0.com
+      clientId: 1MAiweVMAX24xo7bjNxMDSGbH1j1niC6
+service:
+   userinfo:
+      host: https:/Auth02Java.nautilus.team
+      port: 8080
+      endpoint: user
+      
